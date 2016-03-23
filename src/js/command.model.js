@@ -115,6 +115,7 @@ const COMMAND_LIST = [
   ['contact'    , open('mail:make.just.on@gmail.com')],
   ['blog'       , open('https://makenowjust.github.io/commlog')],
   ['github'     , open('https://github.com/MakeNowJust')],
+  ['tweet'      , open('https://twitter.com/intent/tweet?text=make%20now%20just%20-&url=https%3A%2F%2Fmakenowjust.github.io%2F&via=make_now_just')],
   ['twitter'    , open('https://twitter.com/make_now_just')],
   ['qiita'      , open('https://qiita.com/make_now_just')],
   ['icon'       , image('img/tsumugu.png')],

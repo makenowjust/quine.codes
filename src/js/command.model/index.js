@@ -24,6 +24,8 @@ const COMMAND_LIST = [
   ['tweet'      , open('https://twitter.com/intent/tweet?text=make%20now%20just%20-&url=https%3A%2F%2Fmakenowjust.github.io%2F&via=make_now_just')],
   ['twitter'    , open('https://twitter.com/make_now_just')],
   ['qiita'      , open('https://qiita.com/make_now_just')],
+  ['like'       , open('https://www.facebook.com/dialog/feed?app_id=1534223720205904&link=https://makenowjust.github.io/&redirect_uri=https://makenowjust.github.io/')],
+  ['facebook'   , open('https://www.facebook.com/make.now.just')],
   ['icon'       , image('img/tsumugu.png')],
   ['tsumugu'    , image('img/tsumugu.png')],
   ['zoi'        , image('https://pbs.twimg.com/media/BspTawrCEAAwQnP.jpg:large')],

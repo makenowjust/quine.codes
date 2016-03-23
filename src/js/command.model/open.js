@@ -9,7 +9,7 @@ export default (url) => (command) => {
     success: true,
     body: m('span.command-result--body-success', [
       'open ',
-      m('a', { href: url }, url)
+      m('a', { href: url, target: '_blank' }, url)
     ]),
   })
 }

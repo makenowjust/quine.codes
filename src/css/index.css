@@ -42,6 +42,7 @@ input[type=text].command-prompt--input {
   color: inherit;
   font-size: inherit;
   font-family: inherit;
+  outline: none;
 }
 
 .command-prompt--input__error {

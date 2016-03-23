@@ -86,7 +86,7 @@ export default {
         class: suggest === null ? 'command-prompt--input__error' :
                suggest === ''   ? 'command-prompt--input__complete' : '',
         style: {
-          width: `${ctrl.inputWidth()}px`,
+          width: `${ctrl.inputWidth() + 1}px`,
         },
         config: ctrl.inputElem,
         oninput: m.withAttr('value', ctrl.update),

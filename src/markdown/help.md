@@ -9,5 +9,6 @@
 | `make social`   | show MakeNowJust's SNS accounts            |
 | `make work`     | show MakeNowJust's works                   |
 | `make contact`  | open mailer to send message to MakeNowJust |
+| `make blog`     | open MakeNowJust's blog in new tab         |
 
 and more commands...

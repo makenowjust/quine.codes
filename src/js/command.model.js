@@ -113,6 +113,7 @@ const COMMAND_LIST = [
   ['work'       , markdown('work')],
   ['works'      , markdown('work')],
   ['contact'    , open('mail:make.just.on@gmail.com')],
+  ['blog'       , open('https://makenowjust.github.io/commlog')],
   ['github'     , open('https://github.com/MakeNowJust')],
   ['twitter'    , open('https://twitter.com/make_now_just')],
   ['qiita'      , open('https://qiita.com/make_now_just')],

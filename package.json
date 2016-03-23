@@ -41,7 +41,7 @@
     "build:minify:html": "html-minifier src/index.html --collapse-whitespace --remove-comments --remove-attribute-quotes -o dist/index.html",
     "build:minify:css": "csso src/css/index.css --stat -o dist/css/index.css",
     "deploy": "npm-run-all -s build deploy:push",
-    "deploy:push": "gh-pages -d dist",
+    "deploy:push": "gh-pages -d dist -b master",
     "watch": "npm-run-all -p watch:*",
     "watch:js": "watchify src/js/index.js -v -o dist/js/index.js",
     "watch:file": "cpx 'src/**/*.{html,css,md,ico,png,json,xml}' dist -w -v"

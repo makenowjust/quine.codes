@@ -1,16 +1,17 @@
 Function.call.call(f=>f(f),null,f=>{
 
-Name      : 'TSUYUSATO Kitsune'
-Gender    : 'Male'
-Birthday  :  4/15
-Location  : 'Tokyo, Japan'
-Skill     : ['JavaScript', 'Haskell', 'Crystal']
-Hobby     : `Writing Quine program`
-Homepage  :  https://makenowjust.github.io/
-Handle    : /[Mm]ake(N|_n)ow(J|_j)ust/, {
-  GitHub  : '@MakeNowJust',
-  Twitter : '@make_now_just',
-  Qiita   : '@make_now_just',
+Name       : 'TSUYUSATO Kitsune'
+Gender     : 'Male'
+Birthday   :  4/15
+Location   : 'Tokyo, Japan'
+Skill      : ['JavaScript', 'Haskell', 'Crystal']
+Hobby      : `Writing Quine program`
+Homepage   :  https://makenowjust.github.io/
+Handle     : /[Mm]ake[._]?[Nn]ow[._]?[Jj]ust/, {
+  GitHub   : '@MakeNowJust',
+  Twitter  : '@make_now_just',
+  Facebook : 'make.just.on',
+  Qiita    : '@make_now_just',
 }
 
 /* Note: This is Quine.                                                  */

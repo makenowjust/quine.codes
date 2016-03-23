@@ -26,10 +26,11 @@ const COMMAND_LIST = [
   ['qiita'      , open('https://qiita.com/make_now_just')],
   ['icon'       , image('img/tsumugu.png')],
   ['tsumugu'    , image('img/tsumugu.png')],
-  ['helloworld', helloworld],
+  ['zoi'        , image('https://pbs.twimg.com/media/BspTawrCEAAwQnP.jpg:large')],
+  ['helloworld' , helloworld],
   ['hello world', helloworld],
   ['fizzbuzz'   , fizzbuzz],
-  ['fizz buzz'   , fizzbuzz],
+  ['fizz buzz'  , fizzbuzz],
   ['date'       , date],
 ]
 

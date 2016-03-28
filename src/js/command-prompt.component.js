@@ -4,22 +4,6 @@ import m from 'mithril'
 import Command from './command.model'
 import History from './history.model'
 
-const watchInput = ({enter, tab}) => event => {
-  m.redraw.strategy('none')
-
-  if (event.keyCode === 9) {
-    tab()
-    m.redraw.strategy('diff')
-    event.preventDefault()
-  }
-
-  if (event.keyCode === 13) {
-    enter()
-    m.redraw.strategy('diff')
-    event.preventDefault()
-  }
-}
-
 export default {
   controller() {
     this.inputWidth = m.prop(0)
@@ -32,6 +16,26 @@ export default {
       let canvas = document.createElement('canvas')
       return canvas.getContext('2d')
     })()
+
+    this.watchInput = ({enter, tab}) => event => {
+      m.redraw.strategy('none')
+
+      const inputElem = this.inputElem()
+
+      if (event.keyCode === 9 ||
+          event.keyCode === 39 &&
+          inputElem && inputElem.selectionEnd === inputElem.value.length) {
+        tab()
+        m.redraw.strategy('diff')
+        event.preventDefault()
+      }
+
+      if (event.keyCode === 13) {
+        enter()
+        m.redraw.strategy('diff')
+        event.preventDefault()
+      }
+    }
 
     const calcInputWidth = command => context.measureText(command).width
 
@@ -90,7 +94,7 @@ export default {
         },
         config: ctrl.inputElem,
         oninput: m.withAttr('value', ctrl.update),
-        onkeydown: watchInput({
+        onkeydown: ctrl.watchInput({
           enter: ctrl.execute,
           tab: ctrl.useSuggest,
         }),

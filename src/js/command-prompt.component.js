@@ -40,8 +40,6 @@ export default {
     const calcInputWidth = command => context.measureText(command).width
 
     this.getFontInfo = (element, isInitialized) => {
-      if (isInitialized) return
-
       const style = window.getComputedStyle(element, null)
       context.font = `${style['font-size']} ${style['font-family']}`
     }

@@ -51,7 +51,7 @@ export default {
   },
 
   suggest(command) {
-    const action = COMMAND_LIST.filter(action => action[0].startsWith(command))[0]
+    const action = COMMAND_LIST.filter(action => action[0].lastIndexOf(command, 0) === 0)[0]
     if (!action) {
       return null
     }

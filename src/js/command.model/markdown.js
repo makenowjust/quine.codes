@@ -14,10 +14,11 @@ const MARKDOWN_CACHE = {}
 
 export default (name) => (command) => {
   const onSuccess = text => {
-    return MARKDOWN_CACHE[name] = {
+    MARKDOWN_CACHE[name] = marked(text);
+    return {
       command,
       success: true,
-      body: m('div.command-result--body-markdown', m.trust(marked(text))),
+      body: m('div.command-result--body-markdown', m.trust(MARKDOWN_CACHE[name])),
     }
   }
 
@@ -29,8 +30,12 @@ export default (name) => (command) => {
     }
   }
 
-  if (MARKDOWN_CACHE[name]) {
-    return resolve(Object.assign({ command }, MARKDOWN_CACHE[name]))
+  if (MARKDOWN_CACHE.hasOwnProperty(name)) {
+    return resolve({
+      command,
+      success: true,
+      body: m('div.command-result--body-markdown', m.trust(MARKDOWN_CACHE[name])),
+    })
   }
 
   return m.request({

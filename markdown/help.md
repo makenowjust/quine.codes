@@ -1,4 +1,4 @@
-# makenowjust.github.io
+# quine.codes
 
 ## available commands
 

@@ -13,6 +13,7 @@ html, body {
 }
 
 main {
+  display: block;
   max-width: 80%;
   padding: 5em 0;
   margin: auto;

@@ -18,7 +18,7 @@ const COMMAND_LIST = [
   ['work'       , markdown('work')],
   ['works'      , markdown('work')],
   ['contact'    , open('mail:make.just.on@gmail.com')],
-  ['blog'       , open('https://quine.codes/commlog')],
+  ['blog'       , open('https://makenowjust.github.io/commlog')],
   ['github'     , open('https://github.com/MakeNowJust')],
   ['repo'       , open('https://github.com/MakeNowJust/quine.codes')],
   ['tweet'      , open('https://twitter.com/intent/tweet?text=make%20now%20just%20-&url=https%3A%2F%2Fquine.codes%2F&via=make_now_just')],

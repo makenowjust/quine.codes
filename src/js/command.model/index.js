@@ -26,6 +26,8 @@ const COMMAND_LIST = [
   ['qiita'      , open('https://qiita.com/make_now_just')],
   ['like'       , open('https://www.facebook.com/dialog/feed?app_id=1534223720205904&link=https://quine.codes/&redirect_uri=https://quine.codes/')],
   ['facebook'   , open('https://www.facebook.com/make.now.just')],
+  ['amazon'     , open('http://www.amazon.co.jp/registry/wishlist/2YQIRFF4BVBW4')],
+  ['wish list'  , open('http://www.amazon.co.jp/registry/wishlist/2YQIRFF4BVBW4')],
   ['icon'       , image('img/tsumugu.png')],
   ['tsumugu'    , image('img/tsumugu.png')],
   ['zoi'        , image('https://pbs.twimg.com/media/BspTawrCEAAwQnP.jpg:large')],
